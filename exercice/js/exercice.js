@@ -1,13 +1,13 @@
-var prenom = "alin";
+// var prenom = "alin";
 // prenom est le nom de la variale , entre guillemet cest la valeur (ALIN) de la variabla, Type de la variable cest Stringla chaine de caracteur cad type de variable;
 // quand cest pas entre guillemet
-var nomMumero = 06616223;
+// var nomMumero = 06616223;
 // type numérique pck ilya pas des guillemet
-var monMum = "0616223915";
+// var monMum = "0616223915";
 // entre guillemet cest une chaine de caractaire
-var booleanFals = false;
+// var booleanFals = false;
 // boollean
-var booleanTrue = true;
+// var booleanTrue = true;
 // boolean
 // var varNull = null; // variable null
 // console.log(prenom);
@@ -64,13 +64,48 @@ var booleanTrue = true;
 
 // TYPE DE FOCTION
 
-/* a au moins un paramettre, sans valeur de retour, paramettre avec une valeur de retour
+/* 1.a au moins un paramettre sans valeur de retour, 
+2.paramettre avec une valeur de retour
 mettre qlq part cad variable
- sans paramettre, sans paramettre sans valeur de retour,*/
+ 3.sans paramettre,avec valeur de retour 
+ 4.sans paramettre sans valeur de retour,*/
 
-var monPrenom;
-monPrenom = prompt();
-// page web 4
-document.write(monPrenom);
-console.log(monPrenom);
-alert(monPrenom);
+//  EXERCICE 24.5.2022
+
+// var monPrenom;
+// monPrenom = prompt();
+// // page web 4
+// document.write(monPrenom);
+// console.log(monPrenom);
+// alert(monPrenom);
+
+// EXERCICE 25.05.23
+
+// prompt();
+// var nb4;
+// nb4 = prompt();
+// var nb5 = 7;
+// var calcul = nb4 % nb5;
+// document.write(calcul);
+// console.log(calcul);
+// alert(calcul);
+
+var nb1 = prompt();
+var nb2 = 7;
+console.log(typeof nb1);
+nb1 = parseInt(nb1);
+console.log(typeof nb1);
+var resultat = nb1 % nb2;
+console.log("res:" + resultat);
+document.write(resultat + "<br>");
+alert(resultat);
+/* aditionner le resultat avec nb2 et stocker le dans resultat, 
+on avait affecté à nb1 la valeur 22, on a eu modulo 1 comme reste
+
+*/
+
+// resultat=resultat+6
+
+// resultat = resultat + nb2;
+resultat += nb2;
+document.write(resultat);
