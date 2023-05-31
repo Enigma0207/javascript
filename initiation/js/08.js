@@ -46,7 +46,7 @@ document.write("<h3>Jusqu'à 2000€, il me faut : " + temps + " mois</h3>");
 // document.write("<h3>Jusqu'à 2000€, il me faut : " + (temps/12) + " années</h3>");
 
 // avec une boucle FOR
-var tps = 0;
+var tps = 0; 
 for (var mesSous = 1000; mesSous < 2000; mesSous += 50) {
   document.write("<h3>Le mois suivant j'ai : " + mesSous + "</h3>");
   tps++;

@@ -1,4 +1,4 @@
-// alert('Coucou');
+ // alert('Coucou');
 
 // -- Incrémentation
 var nb1 = 1;

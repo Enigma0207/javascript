@@ -187,10 +187,12 @@
 // // chaque mois j'ajoute 50€
 // // combien de temps me faut-il pour avoir 2000€ sur mon compte ?
 
-var monCompte = 1000;
-var temps = 0;
-while (monCompte < 2000) {
-  monCompte += 50;
-  temps++;
-  document.write("<h3> mon compte:" + monCompte + "</h3>");
-}
+// var monCompte = 1000;
+// var temps = 0;
+// while (monCompte < 2000) {
+//   monCompte += 50;
+//   temps++;
+//   document.write("<h3> mon compte:" + monCompte + "</h3>");
+// }
+
+

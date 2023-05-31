@@ -1,4 +1,4 @@
-// alert('test');
+ // alert('test');
 
 // -- Structure de base IF
 
@@ -30,21 +30,32 @@ On utilise le IF pour vérifier l'âge de l'internaute.
 => s'il est mineur je [1]lui signale et [2]le renvoie vers un autre site
 */
 // 1 -- je déclare la majorité légale
-var MajoriteFR = 18;
+// var MajoriteFR = 18;
 
-// 2 -- demander l'âge en s'assurant que nous avons un NUMBER
-var age = parseInt(prompt("Indiquez votre âge"));
+// 2 -- demander l'âge en s'assurant que nous 
+// avons un NUMBER
+// var age = parseInt(prompt("Indiquez votre âge"));
 
 // 3 -- je vérifie si mon internaute est majeur
-if (age >= MajoriteFR) {// bienvenue si vrai
-    alert("Bienvenue, vous êtes majeur");
-} else {
+// if (age >= MajoriteFR) {// bienvenue si vrai
+//     alert("Bienvenue, vous êtes majeur");
+// } else {
     // s'il est mineur je lui signale
-    alert("Allez voir un autre super site...");
+    // alert("Allez voir un autre super site...");
     // et ensuite je redirige vers Darty ;-)
-    document.location.href = "http://www.darty.com/"
+    // document.location.href = "http://www.darty.com/"
+// }
+
+ 
+ var majeur=18;
+ var age = parseInt(prompt("indiquer votre age"));
+ if (age >= majeur){
+    alert("bienvennue,vous etes majeur");
 }
-
-
+ else{
+    alert("renvoie dans un autre site");
+    document.location.href = "http://www.darty.com/";
+   
+}
 
 /*FIN*/
