@@ -54,63 +54,63 @@
 // document.write('<p>' + 'La valeur du dernier élement supprimé : ' + lastElement);
 
 
-var fruits = ["Apple", "Banana"];
-document.write('<p>' + 'Tableau fruits initial : ' + fruits + '</p>');
+// var fruits = ["Apple", "Banana"];
+// document.write('<p>' + 'Tableau fruits initial : ' + fruits + '</p>');
 //Ajouter à la fin du tableau
-var newLength = fruits.push('Orange', 'Citron');
+// var newLength = fruits.push('Orange', 'Citron');
 
 
-document.write('<p>' + 'Tableau fruits ajout des deux éléments : ' + fruits + '</p>');
-document.write('<p>' + typeof fruits + '</p>');
-document.write('<p>' + typeof newLength + '</p>');
-document.write('<p>' + newLength + '</p>');
+// document.write('<p>' + 'Tableau fruits ajout des deux éléments : ' + fruits + '</p>');
+// document.write('<p>' + typeof fruits + '</p>');
+// document.write('<p>' + typeof newLength + '</p>');
+// document.write('<p>' + newLength + '</p>');
 
-var lastElement = fruits.pop();
-document.write('<p>' + 'Tableau fruits après avoir supprimé le dernier élement : ' + fruits + '</p>');
+// var lastElement = fruits.pop();
+// document.write('<p>' + 'Tableau fruits après avoir supprimé le dernier élement : ' + fruits + '</p>');
 
 
-document.write('<p>' + 'La taille finale du tableau : ' + fruits.length + '</p>');
-document.write('<p>' + typeof lastElement + '</p>');
-document.write('<p>' + 'La valeur du dernier élement supprimé : ' + lastElement + '</p>');
+// document.write('<p>' + 'La taille finale du tableau : ' + fruits.length + '</p>');
+// document.write('<p>' + typeof lastElement + '</p>');
+// document.write('<p>' + 'La valeur du dernier élement supprimé : ' + lastElement + '</p>');
 
-var firstElement = fruits.shift();
-document.write('<p>' + 'Tableau fruits après avoir supprimé le premier élement : ' + fruits + '</p>');
+// var firstElement = fruits.shift();
+// document.write('<p>' + 'Tableau fruits après avoir supprimé le premier élement : ' + fruits + '</p>');
 
-document.write('<p>' + 'La valeur du premier élement supprimé : ' + firstElement + '</p>');
+// document.write('<p>' + 'La valeur du premier élement supprimé : ' + firstElement + '</p>');
 
-var newLengthShift = fruits.unshift('Strawberry', 'Cherry');
+// var newLengthShift = fruits.unshift('Strawberry', 'Cherry');
 
-document.write('<p>' + 'Tableau fruits après avoir ajouté le(s) premiers élément(s) : ' + fruits + '</p>');
+// document.write('<p>' + 'Tableau fruits après avoir ajouté le(s) premiers élément(s) : ' + fruits + '</p>');
 
-document.write('<p>' + 'La nouvelle valeur après avoir ajouté le(s) premiers élément(s) : ' + newLengthShift + '</p>');
+// document.write('<p>' + 'La nouvelle valeur après avoir ajouté le(s) premiers élément(s) : ' + newLengthShift + '</p>');
 
-fruits.push('Mango');
+// fruits.push('Mango');
 
-// Créer un tableau
-var pos = fruits.indexOf('Banana');
+// // Créer un tableau
+// var pos = fruits.indexOf('Banana');
 
-document.write('<p>' + 'Tableau fruits après avoir ajouté le(s) derniers élément(s) : ' + fruits + '</p>');
+// document.write('<p>' + 'Tableau fruits après avoir ajouté le(s) derniers élément(s) : ' + fruits + '</p>');
 
-document.write('<p>' + 'La valeur de retour de la fonction "indexOf" : ' + pos + '</p>');
+// document.write('<p>' + 'La valeur de retour de la fonction "indexOf" : ' + pos + '</p>');
 
-var removedItem = fruits.splice(pos, 2);
+// var removedItem = fruits.splice(pos, 2);
 
-document.write('<p>' + 'Tableau fruits après avoir supprimé le(s) élément(s) par la fonction "splice" : ' + fruits + '</p>');
+// document.write('<p>' + 'Tableau fruits après avoir supprimé le(s) élément(s) par la fonction "splice" : ' + fruits + '</p>');
 
-document.write('<p>' + 'La valeur de retour de la fonction "splice" : ' + removedItem + '</p>');
-console.log(removedItem);
+// document.write('<p>' + 'La valeur de retour de la fonction "splice" : ' + removedItem + '</p>');
+// console.log(removedItem);
 
-var shallowCopy = fruits.slice();
+// var shallowCopy = fruits.slice();
 
-var fruits2 = fruits;
+// var fruits2 = fruits;
 
-document.write('<p>' + 'La valeur de retour de la fonction "slice" : ' + shallowCopy + ' qui est une copie du tableau "fruits"</p>');
-console.log(shallowCopy);
+// document.write('<p>' + 'La valeur de retour de la fonction "slice" : ' + shallowCopy + ' qui est une copie du tableau "fruits"</p>');
+// console.log(shallowCopy);
 
-var nouvelleValeur = fruits.unshift("Melon", "Poire");
+// var nouvelleValeur = fruits.unshift("Melon", "Poire");
 
-console.log(fruits);
+// console.log(fruits);
 
-console.log(shallowCopy);
+// console.log(shallowCopy);
 
-console.log(fruits2);
+// console.log(fruits2);
