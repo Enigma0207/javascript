@@ -598,7 +598,7 @@
 // } else if (dayif == "mardi") {
 //   document.write("demain nous seron dimanche");
 // } else if (dayif == "mardi") {
-//   document.write("demain nous seron lundi");
+//   document.write("demain nous seron lundi");   
 // } else {
 //   document.write("nous prenons que les jours de la semaine");
 // }
@@ -671,10 +671,11 @@
 // }
 
 // Comparaison de deux nombres
-// Ecrivez un programme 07_comparaison.js qui fait saisir deux nombres puis compare leurs valeurs et affiche un message approprié (plus grand, plus petit, égal).
+// Ecrivez un programme 07_comparaison.js qui fait saisir deux nombres puis compare leurs valeurs et affiche un message approprié
+//  (plus grand, plus petit, égal).
 
-var nom1 = prompt("saisir val");
-var nom2 = prompt("saisir val");
+// var nom1 = prompt("saisir val");
+// var nom2 = prompt("saisir val");
 // if (nom1 < nom2) {
 //   document.write("la plus petite");
 // } else if ((nom1 = nom2)) {
@@ -683,15 +684,15 @@ var nom2 = prompt("saisir val");
 //   document.write("grand");
 // }
 
-function comparaison(va1, va2) {
-  if (va1 > va2) {
-    document.write("plus grand");
-  } else if (va1 < va2) {
-    document.write("petit");
-  } else if (va1 == va2) {
-    document.write("égal");
-  } else if (va1 == va2) {
-    document.write("égal");
-  }
-}
-comparaison(nom1, nom2);
+// function comparaison(va1, va2) {
+//   if (va1 > va2) {
+//     document.write("plus grand");
+//   } else if (va1 < va2) {
+//     document.write("petit");
+//   } else if (va1 == va2) {
+//     document.write("égal");
+//   } else if (va1 == va2) {
+//     document.write("égal");
+//   }
+// }
+// comparaison(nom1, nom2);
