@@ -598,7 +598,7 @@
 // } else if (dayif == "mardi") {
 //   document.write("demain nous seron dimanche");
 // } else if (dayif == "mardi") {
-//   document.write("demain nous seron lundi");   
+//   document.write("demain nous seron lundi");
 // } else {
 //   document.write("nous prenons que les jours de la semaine");
 // }
@@ -696,3 +696,43 @@
 //   }
 // }
 // comparaison(nom1, nom2);
+
+// exercice avec la fonction random
+
+// var prenom = [
+//   "Alexis",
+//   "Alin",
+//   "Cynthia",
+//   "Faïssal",
+//   "Jérémy",
+//   "Karima",
+//   "Michel",
+//   "Narcis",
+//   "Nawal",
+//   "Oliver",
+//   "Rahim",
+//   "Wassila",
+// ];
+// on declare une variable chiffreRand
+
+// var chiffreRand = Math.random();
+// chiffreRand = chiffreRand * 10;
+// chiffreRand = Math.floor(chiffreRand);
+// var result = prenom[chiffreRand];
+// document.write(chiffreRand+" " +result);
+
+// on aura les renom aleatoir et les valeur aléatoir
+
+// 14.06.2023
+
+function fillarray(num) {
+  var addElement = [];
+  var elem;
+  for (var i = 0; i <= num; i++) {
+    elem = prompt("saisir des données");
+    addElement.push(elem);
+  }
+  return addElement;
+}
+var fruits = fillarray(3);
+document.write(fruits);
