@@ -514,7 +514,7 @@
 //   }
 // }
 
-// var age = prompt("Indiquez votre âge : ");
+// var age = prompt("Indiquez votre âge : "); 
 
 // while (age <= 3 || age >= 120 || isNaN(age)) {
 //   age = prompt("Indiquez votre âge : ");
@@ -725,14 +725,14 @@
 
 // 14.06.2023
 
-function fillarray(num) {
-  var addElement = [];
-  var elem;
-  for (var i = 0; i <= num; i++) {
-    elem = prompt("saisir des données");
-    addElement.push(elem);
-  }
-  return addElement;
-}
-var fruits = fillarray(3);
-document.write(fruits);
+// function fillarray(num) {
+//   var addElement = [];
+//   var elem;
+//   for (var i = 0; i <= num; i++) {
+//     elem = prompt("saisir des données");
+//     addElement.push(elem);
+//   }
+//   return addElement;
+// }
+// var fruits = fillarray(3);
+// document.write(fruits);
