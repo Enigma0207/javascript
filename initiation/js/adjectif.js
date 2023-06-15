@@ -19,96 +19,74 @@
 //     prenom.push(saisie);
 
 // }
-// document.write(prenom);
-// var prenom = [];
-// var adjectif = [];
+document.write(prenom);
+var prenom = [];
+var adjectif = [];
 // on doit declarer une autre varialbe pour reccuperer les valeur de prompt;
 // var prenomForm;
-// while (prenom.length <= 12) {
-//   prenomForm = prompt("saisir prenom");
-//   prenom.push(prenomForm);
-
-// }
-// console.log(prenom);
-// document.write(prenom );
+while (prenom.length <= 12) {
+  prenomForm = prompt("saisir prenom");
+  prenom.push(prenomForm);
+}
+console.log(prenom);
+document.write(prenom);
 
 // exercice avec la fonction random
 
-// var prenom = [
-//   "Alexis",
-//   "Alin",
-//   "Cynthia",
-//   "Faïssal",
-//   "Jérémy",
-//   "Karima",
-//   "Michel",
-//   "Narcis",
-//   "Nawal",
-//   "Oliver",
-//   "Rahim",
-//   "Wassila",
-// ];
+var prenom = [
+  "Alexis",
+  "Alin",
+  "Cynthia",
+  "Faïssal",
+  "Jérémy",
+  "Karima",
+  "Michel",
+  "Narcis",
+  "Nawal",
+  "Oliver",
+  "Rahim",
+  "Wassila",
+];
 // on declare une variable chiffreRand
 
-// var chiffreRand = Math.random();
-// chiffreRand = chiffreRand * 10;
-// chiffreRand = Math.floor(chiffreRand);
-// var result = prenom[chiffreRand];
-// document.write(chiffreRand+" " +result);
+var chiffreRand = Math.random();
+chiffreRand = chiffreRand * 10;
+chiffreRand = Math.floor(chiffreRand);
+var result = prenom[chiffreRand];
+document.write(chiffreRand + " " + result);
+// function fillArray(num){
+//     var adelement=[];
+//     var element;
+//     for(i=0;i<=num;i++){
+//         element=prompt("saisir les données");
+//         adelement.push(element);
+//     }
+//     return adelement;
+// }
 
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function fillArray(num){
-    var adelement=[];
-    var element;
-    for(i=0;i<=num;i++){
-        element=prompt("saisir les données");
-        adelement.push(element);
-    }
-    return adelement;
-}
-// execution de la fonction : 
-var fruits = fillArray(3);
-document.write("<p>" +fruits+ "</p>");
-console.log(fruits);
-
+// exercice avec fonction prenom adjectif
 
 // 1- Déclarer une fonction "fillArray" qui prend en paramètre un entier "num" et elle retourne un tableau "addElement"
 // 2- dans la fonction :
+//a/Déclarer une variable de type tableau "addElement"
+//b/ Déclarer une variable "elem"
+//c/Dans une boucle "for", utiliser une boîte dialogue afin de saisir des données,
+//   nous allons stocker la valeur de retour dans la variable "elem"(nombre de l'affichage de la boîte de dialogue
+//   dépend du nombre qui vient du paramètre utilisé dans la fonction)
+// d/ Les données saisies à partir de la boîte de dialogue seront stockées dans le tableau "addElement"
+function fillArray(num) {
+  // a/Déclarer une variable de type tableau "addElement"
+  var addElement = [];
+  // b/ Déclarer une variable "elem"
+  var elem;
+  // c/Dans une boucle "for", utiliser une boîte dialogue afin de saisir des données,
+  //   nous allons stocker la valeur de retour dans la variable "elem"(nombre de l'affichage de la boîte de dialogue
+  //   dépend du nombre qui vient du paramètre utilisé dans la fonction)
+  //   d/ Les données saisies à partir de la boîte de dialogue seront stockées dans le tableau "addElement"
+  for (var i = 0; i < num; i++) {
+    var elem = prompt("Saisir de données !");
+    addElement.push(elem);
+  }
 
-// function fillArray(num) {
-    // a/Déclarer une variable de type tableau "addElement"
-    // var addElement = [];
-    // b/ Déclarer une variable "elem"
-    // var elem;
-    // c/Dans une boucle "for", utiliser une boîte dialogue afin de saisir des données, nous allons stocker la valeur de retour dans la variable "elem" (nombre de l'affichage de la boîte de dialogue dépend du nombre qui vient du paramètre utilisé dans la fonction)
-    //   d/ Les données saisies à partir de la boîte de dialogue seront stockées dans le tableau "addElement"
-    // for (var i = 0; i < num; i++) {
-    //   elem = prompt("Saisir de données !");
-    //   addElement.push(elem);
-//     }
-  
-//     return addElement;
-//   }
-  
-  
-  
-
-
+  return addElement;
+}
