@@ -21,7 +21,7 @@
 // // var last = fruits[fruits.length - 1];
 
 // // Banana
-
+ 
 // //Boucler sur un tableau
 
 // // var couleurs = ["rouge", "vert", "bleu"];

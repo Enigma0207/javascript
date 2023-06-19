@@ -7,7 +7,10 @@
 
 
 // var nomJourSemaine = ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"];
-// var jourSuivant;
+// var jourSuivant=prompt( "fiche jourSuivant");
+// if (jourSuivant === nomJourSemaine[0]){
+//     document.write(nomJourSemaine[1]);
+// }
 // jourSuivant = prompt("saisir jour de la semaine");
 // if (jourSuivant === nomJourSemaine[0]) {
 //   document.write(nomJourSemaine[1]);
@@ -77,24 +80,24 @@
 
 
 
-var jourSemain=["lundi","mardi","mercredi","jeudi","vendredi","samedi","dimanche"];
-var jourSuivant = prompt("saisir jour suivant")
-if(jourSuivant === jourSemain[0]){
-    document.write(jourSemain[1]);
-}
-if(jourSuivant === jourSemain[1]){
-    document.write(jourSemain[2]);
-}
-if(jourSuivant === jourSemain[2]){
-    document.write(jourSemain[3]);
-}
-if(jourSuivant == jourSemain[3]){
-    document.write(jourSemain[4]);
-}
-if(jourSuivant == jourSemain[4]){
-    document.write(jourSemain[5]);
-}
-if(jourSuivant == jourSemain[5]){
-    document.write(jourSemain[6]);
-}
+// var jourSemain=["lundi","mardi","mercredi","jeudi","vendredi","samedi","dimanche"];
+// var jourSuivant = prompt("saisir jour suivant")
+// if(jourSuivant === jourSemain[0]){
+//     document.write(jourSemain[1]);
+// }
+// if(jourSuivant === jourSemain[1]){
+//     document.write(jourSemain[2]);
+// }
+// if(jourSuivant === jourSemain[2]){
+//     document.write(jourSemain[3]);
+// }
+// if(jourSuivant == jourSemain[3]){
+//     document.write(jourSemain[4]);
+// }
+// if(jourSuivant == jourSemain[4]){
+//     document.write(jourSemain[5]);
+// }
+// if(jourSuivant == jourSemain[5]){
+//     document.write(jourSemain[6]);
+// }
 
