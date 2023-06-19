@@ -1,6 +1,6 @@
 // var xi = 20;
 // var yi = 20;
-// resultat= xi+yi
+// var resultat= xi+yi
 // prompt("resultat");
 // alert("resultat");
 // console.log(xi==yi);
@@ -222,11 +222,13 @@
 // 1- Saisir deux valeurs à partir de deux champs de formulaire
 // 	-une valeur en string et d'autre en numérique
 // 2- Vérifier le type des deux valeurs (si elles sont respectivement bien string et numérique)
-// 3- Déclarer(implanter) une fonction qui prend ces deux valeurs en paramètre et elle concatène les deux valeurs en question afin de nous afficher la phrase suivante :
+// 3- Déclarer(implanter) une fonction qui prend ces deux valeurs en paramètre et elle concatène les deux valeurs 
+// en question afin de nous afficher la phrase suivante :
 // 	"Je m'appelle ... et j'ai ... ans"
 
 // / la syntaxe suivante effectue deux opérations distinctes en même temps:
-// 1. elle exécute la fonction prédefinie de js (prompt) qui nous permet l'affichage d'une boîte de dialogue avec un champs de formulaire afin de saisir des valeurs string ou numérique
+// 1. elle exécute la fonction prédefinie de js (prompt) qui nous permet l'affichage d'une boîte de dialogue avec un champs de formulaire 
+// afin de saisir des valeurs string ou numérique
 // 2. en déclarant une variable, nous pouvons stocker la valeur de retour de la fonction "prompt" saisie à partir du champs de formulaire
 // conclusion: toutes les valeurs saisies seront stockées dans notre variable
 
@@ -238,7 +240,7 @@
 //2- vérification des valeurs
 // if (isNaN(prenom) && !isNaN(age)) {
 //   affichagePrenomAge(prenom, age);
-// }
+// } 
 
 // function affichagePrenomAge(val1, val2) {
 //   var result = "Je m'appelle " + val1 + " et j'ai " + val2 + " ans.";
@@ -260,12 +262,13 @@
 
 // ici on declare var, on saisit la valeur dans le formulaire avc prompt on execute la foction et le stock dans la var celcius
 // var celcius = prompt("saisir une variable");
-// // declare une var farehn, on stoque le resultat de la conversion, dans la val farehn, on coverti celcuis en fareihn grace à la formule
+// declare une var farehn, on stoque le resultat de la conversion, dans la val farehn, on coverti celcuis en fareihn grace à la formule
 // var fahren = (celcius * (9 / 5) + 32);
 // document.write(fahren);
 // console.log(fahren);
 // console.log(typeof fahren);
-// var string = fahren.toString(); c'est pour transformer number to string
+// var string = fahren.toString(); 
+// c'est pour transformer number to string
 // console.log(typeof string);
 
 //  EXERCICE CONVERSION   F° en C° 2
@@ -315,7 +318,8 @@
 // afficher developpeurs
 
 // / EXERCICE 3( à travailler encore et encore)
-// 1.Implanter une fonction qui s'appelle "affichagePrenom2" qui prend un paramettre de type tableau (de 12 prenom) et une chaine de caractere successivement
+// 1.Implanter une fonction qui s'appelle "affichagePrenom2" qui prend un paramettre de type tableau (de 12 prenom) et
+//  une chaine de caractere successivement
 // 2. la fonction doit retourner un tableau qui contient deux élements ,le premier sera paramettre tableau et le deuxieme sera la chine de caractere
 // nous allons afficher le resultat apartir du console
 
@@ -328,7 +332,8 @@
 
 // La fonction aura une valeur de retour
 
-// 2- Grâce à une boucle (le nombre de la condition dans la boucle vient du premier paramètre), la fonction "additionDesChiffres" va remplir le tableau "paramArray" avec les index de la boucle
+// 2- Grâce à une boucle (le nombre de la condition dans la boucle vient du premier paramètre), la fonction "additionDesChiffres" 
+// va remplir le tableau "paramArray" avec les index de la boucle
 
 // 3- on affiche la valeur de retour sur la page web
 
@@ -389,7 +394,8 @@
 
 // EXERCICE 09.06.2023
 // 1- saisir un nombre dans un formulaire
-// 2- Tant que la valeur est (inférieure ou égale à 3) ou (supérieure ou égale à 120) ou une (string), la boîte de dialogue s'affiche, qui vous demande "Indiquez votre âge".
+// 2- Tant que la valeur est (inférieure ou égale à 3) ou (supérieure ou égale à 120) ou une (string), 
+// la boîte de dialogue s'affiche, qui vous demande "Indiquez votre âge".
 // 3- Déclarer une variable "majoriteFR" qui comprend la valeur 18;
 // 4- Déclarer une fonction "afficheAge" qui prend en paramètre un nombre
 // la fonction n'a pas de valeur de retour
@@ -452,7 +458,7 @@
 // 2. en declarant une variable, nous pouvont stocker la valeur de retour de la fonction prompt saisie à partir du chmps de formulaire
 
 // conclusion: toutes les valeurs saisies seront stockées dans notre variable
-
+ 
 // var age = prompt("indiquez votre age:");
 // while (age <= 3 || age >= 120 || isNAN(age)) {
 //   age = prompt("indiquez votre age");
@@ -464,8 +470,8 @@
 
 //  1 - Saisir un nombre dans un formulaire
 
-//  2 - Tant que la valeur est (inférieure ou égale à 3) ou (supérieure ou égale à 120) ou une (string), la boîte de dialogue s'affiche, qui vous demande "Indiquez votre âge".
-
+//  2 - Tant que la valeur est (inférieure ou égale à 3) ou (supérieure ou égale à 120) ou une (string), 
+//  
 //  3 - Déclarer une variable "majoriteFr" qui comprend la valeur 18
 
 //  4 - Déclarer une fonction "afficheAge" qui prend en paramètre un nombre , la fonction n'a pas de valeur de retour

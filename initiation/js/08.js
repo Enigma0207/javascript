@@ -27,7 +27,7 @@ var j = 1;
 while (j <= 10) {
     document.write("<hr /><p>Instruction exécutée : " + j + "</p>");
     /* 50 lignes de code */
-j++; // j = j + 1; OU j += 1;
+// j++; // j = j + 1; OU j += 1;
 
 /* -------------------------------
             EXERCICE
@@ -46,11 +46,12 @@ combien de temps me faut-il pour avoir 2000€ sur mon compte ?
 // document.write("<h3>Jusqu'à 2000€, il me faut : " + (temps/12) + " années</h3>");
 
 // avec une boucle FOR
-// var tps = 0;
-// for (var mesSous = 1000; mesSous < 2000; mesSous += 50) {
-//   document.write("<h3>Le mois suivant j'ai : " + mesSous + "</h3>");
-//   tps++;
-// }
-// document.write("<h3>Il aura fallu " + tps + " mois.</h3>");
+var monCompte = 1000;
+var mois = 0;
+for (var mesSous = 1000; mesSous < 2000; mesSous += 50) {
+  document.write("<h3>Le mois suivant j'ai : " + mesSous + "</h3>");
+  mois++;
+}
+document.write("<h3>Il aura fallu " + mois + " mois.</h3>");
 
 /*FIN*/
