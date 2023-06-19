@@ -52,23 +52,7 @@ if (prenomLogin === prenom) {
 // monAge = 999;
 // mdp = "bibi";
 
-// var prenomLogin = prompt("Quel est votre prénom ?");
 
-// if (prenomLogin === prenom) {
-//     var ageLogin = parseInt(prompt("Votre âge ?"));
-//     if (ageLogin === monAge) {
-//         var mdpLogin = prompt("Le mot de passe ?")
-//         if (mdpLogin === mdp){
-//             alert("Bienvenue " + prenomLogin);
-//         } else {
-//             alert("Pb de mot de passe !");
-//         }
-//     } else {
-//         alert("Erreur d'âge");
-//     }
-// } else {
-//     alert("Attention, prénom non reconnu");
-// }
 
 
 
