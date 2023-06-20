@@ -1,10 +1,33 @@
 // // alert('test');
 
+
+var heure = prompt("Entrez l'heure :");
+var minute = prompt("Entrez les minutes :");
+var seconde = prompt("Entrez les secondes :");
+
+
+if((seconde>=0)&&(seconde<=59)&&(minutes>=0)&&(minutes<=59)&&(heure>0)&&(heure<=23)){
+    seconde++;
+    if (seconde === 60){
+        seconde =0;
+        minute++;
+        if(minute === 60){
+            minute =0;
+            heure++
+            if(heure === 24){
+                heure = 0;
+            
+            }
+        }
+    }document.write("il est:" +heure+ "h" +minute+ "minutes" + seconde+"seconde");
+}document.write("incorect");
+
+
 // var heure = prompt("Entrez l'heure :");
 // var minute = prompt("Entrez les minutes :");
 // var seconde = prompt("Entrez les secondes :");
 
-// // on teste les cas d'erreur
+// on teste les cas d'erreur
 // if ((heure >= 0) && (heure <= 23) && (minute >= 0) && (minute <= 59) && (seconde >= 0) && (seconde <=59)) { // &&
 //     seconde++; // on incrémente les secondes
 //     if (seconde === 60) { // ===
@@ -32,26 +55,26 @@
 
 
 
-var heure = prompt("saisir l'heure");
-var minute = prompt("saisir minute");
-var seconde = prompt("saisir seconde");
-if ((seconde >= 0) && (seconde <= 59) && (minute >= 0) && (minute <= 59) && (heure >= 0) && (heure <= 23)) {
-    seconde++;
+// var heure = prompt("saisir l'heure");
+// var minute = prompt("saisir minute");
+// var seconde = prompt("saisir seconde");
+// if ((seconde >= 0) && (seconde <= 59) && (minute >= 0) && (minute <= 59) && (heure >= 0) && (heure <= 23)) {
+//     seconde++;
 
-    if (seconde === 60) {
-        seconde = 0;
-        minute++;
-        if (minute === 60) {
-            minute = 0;
-            heure++;
-            if (heure === 24) {
-                heure=0
-            }
+//     if (seconde === 60) {
+//         seconde = 0;
+//         minute++;
+//         if (minute === 60) {
+//             minute = 0;
+//             heure++;
+//             if (heure === 24) {
+//                 heure=0
+//             }
             
-        }
-    }
-    document.write("il est:"+heure+ "heures" +minute+ " minutes " + seconde+ "secondes" )
-}
-else{
-    document.write("saisie heure correcte")
-}
+//         }
+//     }
+//     document.write("il est:"+heure+ "heures" +minute+ " minutes " + seconde+ "secondes" )
+// }
+// else{
+//     document.write("saisie heure correcte")
+// }
