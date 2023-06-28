@@ -8,3 +8,9 @@ function fillarray(num) {
 }
 var fruits = fillarray(3);
 document.write(fruits);
+
+
+function addition(a, b) {
+  let resultat = a + b;
+  return resultat;
+}

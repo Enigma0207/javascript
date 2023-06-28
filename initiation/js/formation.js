@@ -46,23 +46,23 @@ et l’initialiser à 03.Appliquer la formule puis affecter son résultat à la 
 
 //  jour = 5;
 // switch (jour) {
-//     case 0: 
+//     case 0:
 //         console.log("dimanche");
 //         break;
-//     case 1: 
+//     case 1:
 //         console.log("lundi");
 //         break;
 //     case 2:
 //         console.log("mardi");
 //         break
-//     case 3: 
+//     case 3:
 //         console.log("mercredi");
 //         break
 //     case 4:
 //         console.log("jeudi");
         
 //         break;
-//     case 5: 
+//     case 5:
 //         console.log("vendredi");
 //         break;
 //     case 6:
@@ -76,6 +76,340 @@ et l’initialiser à 03.Appliquer la formule puis affecter son résultat à la 
 // }
 
 
-// var age = 5;
+// var age = 50;
 // var message = (age >= 18) ? "majeur" : "mineur";
+
+
 // console.log(message);
+
+// BOUCLE
+
+// 1FOR
+// QUAND ON CONNAIT LE NOMBRE D TOUR
+
+// 2.WHILE
+// QUAND ON CONNAIT PAS LE NOMBRE DE TOUR DE LA BOUCLE
+// VAR EST DECLARER à L4EXTERIEUR
+
+// 3DO WHILE
+
+// var i = 0;
+// do {
+    
+//     confirmnsole.log;
+//     i++
+
+// } while (i<5);
+    
+// let i = 6;
+// do {
+//     console.log(i);
+//     i++;
+// } while (i < 5);
+// affiche6
+//
+
+// BREAK ET CONTINU
+
+// [10:23] iboudiokel (Invité)
+    
+// (4 == 4) && (5 != "5")              // =>
+// (10 > 5) || (3 <= 2)                // =>
+// !(true && false)                    // =>
+// (4 >= 4) && !(false || true)        // =>
+// (7 >= 8) || !(false && true)        // =>
+// (5 > 3) && (10 == 10)               // =>
+// !(true || false) && (6 >= 6)        // =>
+// (8 <= 4) || !(false && true)        // =>
+// !((10 > 8) || (5 < 2))              // =>
+
+
+
+// let i = 6;
+
+
+// do {
+//     console.log(i); // affiche 6
+//     i++;  // incremente i 6 + 1 = 7
+// }​​​​​​​ while (i < 5); // verifie la condition
+
+
+// console.log(i); // affiche 7
+
+
+
+// // exemple du break => arreter l'execution de la boucle si la variable i egale 4
+// for (let i = 0; i < 10; i++){
+//     console.log(i); // affiche i
+//     if (i == 4) {​​​​​​​ // si i = 4
+//         break; // sortir de la boucle
+//     }
+// }
+
+
+// //  exemple du continue => on souhaite afficher que les nombres pairs entre 0 et 10
+// for (let i = 0; i <= 10; i++){
+//     if (i % 2 != 0) {​​​​​​​ // verifie si i n'est pas un nombre pair
+//         continue; // ignore et passe a l'iteration suivante
+//     }
+//     console.log(i);
+// }
+
+
+// // idem
+// for (let i = 0; i <= 10; i++){
+//     if (i % 2 == 0) {
+//         console.log(i);
+//     }
+// }
+
+
+// //  exemple du continue => on souhaite afficher que les nombres impairs entre 0 et 10
+// for (let i = 0; i <= 10; i++){
+//     if (i % 2 == 0) {​​​​​​​ // verifie si i n'est pas un nombre impair
+//         continue; // ignore et passe a l'iteration suivante
+//     }
+//     console.log(i);
+// }
+
+
+
+// TABLEAU
+// est un objet en js
+// let tableau = [];
+// let table = new Array();
+
+
+
+
+// let tableau=["cythia", "narcis", "rahim"];
+// let index = tableau.indexOf("cythia");
+// console.log(index);
+
+// [13:39] iboudiokel (Invité)
+    
+// let i = 6;
+
+
+// do {
+//     console.log(i); // affiche 6
+//     i++;  // incremente i 6 + 1 = 7
+// }​​​​​​​ while (i < 5); // verifie la condition
+
+
+// console.log(i); // affiche 7
+
+
+
+// // exemple du break => arreter l'execution de la boucle si la variable i egale 4
+// for (let i = 0; i < 10; i++){
+//     console.log(i); // affiche i
+//     if (i == 4) {​​​​​​​ // si i = 4
+//         break; // sortir de la boucle
+//     }
+// }
+
+
+// //  exemple du continue => on souhaite afficher que les nombres pairs entre 0 et 10
+// for (let i = 0; i <= 10; i++){
+//     if (i % 2 != 0) {​​​​​​​ // verifie si i n'est pas un nombre pair
+//         continue; // ignore et passe a l'iteration suivante
+//     }
+//     console.log(i);
+// }
+
+
+// // idem
+// for (let i = 0; i <= 10; i++){
+//     if (i % 2 == 0) {
+//         console.log(i);
+//     }
+// }
+
+
+// //  exemple du continue => on souhaite afficher que les nombres impairs entre 0 et 10
+// for (let i = 0; i <= 10; i++){
+//     if (i % 2 == 0) {​​​​​​​ // verifie si i n'est pas un nombre impair
+//         continue; // ignore et passe a l'iteration suivante
+//     }
+//     console.log(i);
+// }
+
+
+
+// let tab = ["Alin", 45]; // ["Alin", 45]
+// tab[3] = "2 rue de l'amour"; // ["Alin", 45, "", "2 rue de l'amour"]
+// // vue que le tableau n'a pas d'indice 2 et 3 met l'indice 2 a vide et l'indice 3 avec la valeur
+// console.log(tab);
+// tab.push("0678545855"); // ["Alin", 45, "", "2 rue de l'amour", "0678545855"]
+// console.log(tab);
+// tab.unshift("Johanne"); // ["Johanne", "Alin", 45, "", "2 rue de l'amour", "0678545855"]
+// console.log(tab);
+// tab[3] = "future"; // ["Johanne", "Alin", 45, "future", "2 rue de l'amour", "0678545855"]
+// console.log(tab);
+// delete tab[3]; // ["Johanne", "Alin", 45, "", "2 rue de l'amour", "0678545855"]
+// console.log(tab);
+// tab = new Array(); // reinitialise le tableau
+// tab = [];  // reinitialise le tableau
+
+
+// let tableau = ["Cynthia", "Narcis", "Rahim", "Nawal", "Karima"];
+// let index = tableau.indexOf("Narcis");
+// console.log(index); // 1
+// let newTab = tableau.slice(0, 3); // ["Cynthia", "Narcis", "Rahim"]
+// console.log(newTab);
+
+
+// let tabNumer = [1, 8, 19, 5];
+// console.log(tabNumer.sort()); // [1, 19, 5, 8]
+
+
+// tabNumer.sort(function (a, b) {
+//     return a - b;
+// }​​​​​​​);
+
+
+// let tab2 = [2, 7, 9, 8];
+// tab2.fill("Alexis"); // ["Alexis", "Alexis", "Alexis", "Alexis"] remplace alexi dans tous les element
+// console.log(tab2);
+// tab2.fill("Michel", 1, 3); // ["Alexis", "Michel", "Michel", "Alexis"]
+// console.log(tab2);
+
+
+// let tab3 = ["Alexis", "Jérémy", "Michel", "Faissal"];
+// let str = tab3.join(' '); // "Alexis Jérémy Michel Faissal"
+// console.log(str);
+// console.log(tab3.reverse()); // ["Faissal", "Michel", "Jérémy", "Alexis"];
+
+
+// let tab4 = [2, 5, 8];
+// // tab4.splice(1, 2); // [2]
+// tab4.splice(2, 0, 'a', 'b'); // [2, 5, 'a', 'b', 8]
+// console.log(tab4);
+
+
+// let tab5 = [1, 2, 3];
+// let tab6 = [4, 5, 6];
+// let tab7 = tab5.concat(tab6); // [1, 2, 3, 4, 5, 6]
+// console.log(tab7);
+
+
+// let tab8 = [1, 6, 8, 3];
+// let tab9 = tab8.map(e => e * 5); // [5, 30, 40, 15]
+// console.log(tab9);
+
+
+
+
+// EXERCICE TABLEAU
+
+// soit le tabelau: ["banane", "pomme", "mangue"];
+// ajouter une fraise entre pomme et mangue
+// suprimer la banane
+// remplacer fraise et mangue par goyave
+// let fruit = ["banane", "pomme", "mangue"];
+// fruit.splice(2,0,"fraise") //['banane', 'pomme', 'fraise', 'mangue'] il entre dans la position 2 et 0 pour ne pas supprimer mangue et alors ajouter fraise avant mangue
+// console.log(fruit);
+// fruit.shift();  // pour supprimer la première element
+// console.log(fruit);
+// fruit.fill("goyave"); //pour remplacer tous les lement par goyave
+// console.log(fruit);
+
+
+// FUNCTION
+// function addition(a, b) {
+//   let resultat = a + b;
+//   return resultat;
+// }
+
+// let somme = addition(2, 5);
+// console.log(somme);
+
+// function addition(a, b) {
+// //   let resultat = a + b;
+//   return a+b;
+// }
+
+// let somme = addition(3, 5);
+// console.log(somme);
+// document.write(somme);
+
+
+// fonction avec valeur par defaut
+// prenom est une variable qui prend par degaut la valeur anonyme
+// function direBonjourPrenom(prenom = "anonyne") {
+//     console.log("bonjour", prenom, "!");
+//     document.write("bonjour", prenom, "!");
+
+// }
+
+// direBonjourPrenom(); //bonjour anonyime
+// direBonjourPrenom("michel"); //bonjour michel
+
+
+
+// 28.06.2023
+// EXERCICE
+// ecrire une fonction maxMin qui prend trois paramètres
+
+// les deux premiers sont des nombres(a et b)
+// le troisième un boolean(c)
+// par défaut le troisieme parametre(c = true)
+//  ●si le paramètre c = true la fonction retourne le maximum entre a et b
+//  ●si le paramètre c = false la fonction retourne le minimum entre a et b
+
+// exemple: maxMin(2, 5, true) => 5
+// maxMin(2, 5, false) => 2
+
+// function maxiMin(a, b, c) {
+//     if ((c==true) &&(a<b)) {
+//         return b;
+//     }
+//      else if ((c==false)&&(a<b)){
+//         return a;
+//     }
+//          else if ((c == true) && (a > b)) {
+//         return a;
+//     }
+//     else if ((c == false) && (a > b)) {
+//         return b;
+//     }
+   
+// }
+// let resultat = maxiMin(1, 3, true)
+// console.log(resultat);
+
+// ecercice
+
+// ecrire unr fonction sommeTab qui prend en paramettre un tableau comprosé de nombres
+// la fonction doit retourner la somme des éléments du tableau
+// exemple:
+
+// sommeTab([1,6,9])
+   
+
+function sommeTab(table) {
+    var num = 0;
+    for (var i = 0; i <= table.length; i++){
+        num = num + table[i];
+    }
+    
+        
+    return num;   
+}
+var tableau1 = [1, 4];
+var resultat = sommeTab(tableau1);
+console.log(resultat);
+        
+        
+
+
+
+
+
+
+
+
+
+
+
