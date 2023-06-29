@@ -137,26 +137,27 @@ et l’initialiser à 03.Appliquer la formule puis affecter son résultat à la 
 // console.log(i); // affiche 7
 
 
+//
+// exemple du break => arreter l'execution de la boucle si la variable i egale 4
 
-// // exemple du break => arreter l'execution de la boucle si la variable i egale 4
+
 // for (let i = 0; i < 10; i++){
-//     console.log(i); // affiche i
-//     if (i == 4) {​​​​​​​ // si i = 4
-//         break; // sortir de la boucle
-//     }
-// }
-
-
-// //  exemple du continue => on souhaite afficher que les nombres pairs entre 0 et 10
-// for (let i = 0; i <= 10; i++){
-//     if (i % 2 != 0) {​​​​​​​ // verifie si i n'est pas un nombre pair
-//         continue; // ignore et passe a l'iteration suivante
+//     if (i == 4) {
+//         break;
 //     }
 //     console.log(i);
 // }
 
 
-// // idem
+//  exemple du continue => on souhaite afficher que les nombres pairs entre 0 et 10
+
+// for (let i = 0; i < 10; i++){
+//     if (i % 2 == 0) {
+//         continue;
+//     }
+//     console.log(i);
+// }
+// idem
 // for (let i = 0; i <= 10; i++){
 //     if (i % 2 == 0) {
 //         console.log(i);
@@ -378,8 +379,51 @@ et l’initialiser à 03.Appliquer la formule puis affecter son résultat à la 
 // }
 // let resultat = maxiMin(1, 3, true)
 // console.log(resultat);
+// 29.06.23 exercice
 
-// ecercice
+// let somme = 0; // la variable somme vaut 0 au depart
+
+// for (let i = 1; i <= 5; i++){
+//     // console.log(i);
+//     somme = somme + i;
+//     // somme += i;
+// }
+
+// console.log(somme);
+
+
+// iteration 1:
+    // somme = 0
+    // i = 1
+    // fin iteration 1:
+        // somme = 1
+        // i = 2
+// iteration 2:
+    // somme = 1
+    // i = 2
+    // fin iteration 2
+        // somme = 3
+        // i = 3
+// iteration 3:
+    // somme = 3
+    // i = 3
+    // fin iteration 3
+        // somme = 6
+        // i = 4
+// iteration 4:
+    // somme = 6
+    // i = 4
+    // fin iteration 4
+        // somme = 10
+        // i = 5
+// iteration 5:
+    // somme = 10
+    // i = 5
+    // fin iteration 5
+        // somme = 15
+        // i = 6
+
+// 29.06.2023 ecercice
 
 // ecrire unr fonction sommeTab qui prend en paramettre un tableau comprosé de nombres
 // la fonction doit retourner la somme des éléments du tableau
@@ -388,28 +432,276 @@ et l’initialiser à 03.Appliquer la formule puis affecter son résultat à la 
 // sommeTab([1,6,9])
    
 
-function sommeTab(table) {
-    var num = 0;
-    for (var i = 0; i <= table.length; i++){
-        num = num + table[i];
-    }
+// function someTab(table) { //1 creation de la fonction
+//     let somme = 0; //3 declarer une valeur qui sock la valeur de retour et initialisé a 0
+//     let i = 0;// 5initalialiser la valeur de i
+//     while (i < table.length) { //4 tant que i est plus que la taille  du tableu
+//         somme = somme + table[i]; //6 ajouter la valeur de la position i du tableau à la variable somme
+//         i++;//incrementer i
+//     }
+//     return somme //2 la fonction a une valeur de retour
+// }
+
+// // pour executer la fonction
+
+// let tableautte=[1,3,5] // dans l'enoncer
+// let resultat = someTab(tableautte);
+// document.write(resultat);
+
+// function maxTab(tableau) {
+//     let max = tableau[0]; // on considere le premier element est le plus grand; premiere valeur du tableau
+//     for (i = 0; i <= tableau.length; i++){
+//         if (max < tableau[i]) {
+//             max = tableau[i];
+//         }
+//     }
+
+//     return max;
+// }
+// // on fait appel à notre tableau
+// let table = [5, 8, 10, 9, 0, 1];
+// let resultat = maxTab(table);
+// console.log(resultat);
+
+// solution du formateur
+// / 29.06.2023
+// ecrire une fonction maxTab qui prend en paramètre un tableau composé de
+
+// nombres
+
+// la fonction devra retourner le plusgrand nombre du tableau
+
+
+// function maxTab(tableau) {
+//     let max = tableau[0]; // on considere le premier elemement comme etant le plus grand
+//     for (let i = 0; i < tableau.length; i++){ // pour i allant de 0 a la taille du tableau
+//         // comparer max de la valeur a la position i du tableau
+//         if (max < tableau[i]) {  // si max est plus petit
+//             // on remplace la valeur de max par la valeur de la position i du tableau
+//             max = tableau[i];
+//         }
+//     }
+//     return max; // retourner max
+// }
+
+ 
+
+// let tab1 = [5, 8, 3, 0];
+// let resultat3 = maxTab(tab1);
+// console.log(resultat3); // affiche => 8
+
+
+
+// 29.06.2023
+// ecrire une fonction minTab qui prend en paramètre un tableau composé de
+
+// nombres
+
+// la fonction devra retourner le plus petit nombre du tableau
+
+// exemple:
+
+// minTab([2, 7, 4, 0]) => 0
+
+// function minTab(tableau) {
+//     let min = tableau[0];
+//     for (let i = 0; i < tableau.length; i++){
+//         if (min > tableau[i]) {
+//             min=tableau[i]
+//         }
+//     }
+
+//     return min;
+// }
+// let tab1 = [5, 8, 3, 0];
+// let resultat3 = minTab(tab1);
+// console.log(resultat3); // affiche =>
+
+
+// 29.06.2023
+// ecrire une fonction maxMinTab qui prend en paramètre un tableau composé de nombres et un boolean
+// ●si le deuxieme parametre égale true la fonction devra retourner le plus grand nombre du tableau
+// ●sinon elle retournera le plus petit
+
+// [14:16] iboudiokel (Invité)
     
-        
-    return num;   
-}
-var tableau1 = [1, 4];
-var resultat = sommeTab(tableau1);
-console.log(resultat);
-        
-        
+// function maxTab(tableau) {
+//     let max = tableau[0]; // on considere le premier elemement comme etant le plus grand
+//     for (let i = 0; i < tableau.length; i++){​​​​​​​ // pour i allant de 0 a la taille du tableau
+//         // comparer max de la valeur a la position i du tableau
+//         if (max < tableau[i]) {​​​​​​​  // si max est plus petit
+//             // on remplace la valeur de max par la valeur de la position i du tableau
+//             max = tableau[i];
+//         }
+//     }
+//     return max; // retourner max
+// }
+
+
+// function minTab(tableau) {
+//     let min = tableau[0]; // on considere le premier elemement comme etant le plus grand
+//     for (let i = 0; i < tableau.length; i++){​​​​​​​ // pour i allant de 0 a la taille du tableau
+//         // comparer max de la valeur a la position i du tableau
+//         if (min > tableau[i]) {​​​​​​​  // si max est plus petit
+//             // on remplace la valeur de max par la valeur de la position i du tableau
+//             min = tableau[i];
+//         }
+//     }
+//     return min; // retourner max
+// }
+
+
+
+// function maxMinTab(tableau, c) {
+//     if (c == true) {
+//         return maxTab(tableau);
+//     }​​​​​​​ else {
+//         return minTab(tableau);
+//     }
+// }
+
+
+
+
+// [14: 55] iboudiokel(Invité)
+    
+// const array = [1, 12, 3, 67, 1, 23, 0, 87];
+// const array2 = [1, 1, 2, 3, 4, 5];
+// const array3 = [0];
+// const array4 = ['never gonna', 'give you', 'up'];
+// const array5 = ['never gonna', 'let you', 'down'];
+
+
+// function verifSortAsc(tableau) {
+//     let estTrier = true; // par defaut on considere que le tableau est trie
+//     let tab = []; // declare un tableau vide pour avoir une copy du tableau
+//     for (let i = 0; i < tableau.length; i++){​​​​​​​ //
+//         // remplir le tableau tab par les valeur du tableau tableau
+//         tab.push(tableau[i]);
+//     }
+//     tab.sort(); // trier tab
+
+
+//     for (let i = 0; i < tab.length; i++){​​​​​​​ // pour i allant de 0 a taille du tableau
+//         if (tab[i] == tableau[i]) {​​​​​​​ // si tab[i] == tableau[i]
+//             estTrier = true;
+//         }​​​​​​​ else {​​​​​​​ // sinon
+//             estTrier = false;
+//             break; // on sort de la boucle
+//         }
+//     }
+//     return estTrier;
+// }
+
+
+// console.log(verifSortAsc(array5)); // =>
+
+
+// 29.06.2023
+// Ecrivez une fonction "reverseArray" qui prend en paramètre un tableau et qui retourne ledit tableau inversé.
+//     Exemple : reverseArray(["Hello", "World!"]) => doit retourner["World!", "Hello"]
+
+// function reversWord(chainCaracter) {
+//     let tab = chainCaracter.split('');
+//     tab.reverse();
+//     let chaine=tab.join('');
+//     return chaine;
+// }
+// let resultat = reversWord("Hello World!");
+// document.write(resultat);
+// ou
+// [15:33] iboudiokel (Invité)
+    
+// function reverseWord(str) {
+//     let tab = str.split(''); // conversion de la chaine de caractere en tableau
+//     tab.reverse(); // inverser le tableau
+//     let chaine = tab.join(''); // convertir le tableau en chaine de caractere
+//     return chaine;
+//     // return str.split('').reverse().join('');
+// }
+
+
+// console.log(reverseWord("Hello World!"));
+
+
+// exerciceEcrivez une fonction "reverseArray" qui prend en paramètre un tableau et qui retourne ledit tableau inversé.
+// Exemple : reverseArray(["Hello", "World!"]) => doit retourner["World!", "Hello"]
+
+
+
+
+// Ecrivez une fonction "reverseWords" qui prend en paramètre un nombre indéfini de paramètres étant des chaînes de caractères et qui retourne,
+//     cette fois - ci, un tableau contenant chaque mot inversé.Exemple : reverseWords("Hello", "World!") => doit retourner["olleH", "!dlroW"]
 
 
 
 
 
 
+// exercice
+// À l'aide des trois fonctions écrites précédemment, écrivez une fonction qui prend en paramètre le tableau
+// suivant et retourne ledit tableau inversé, de même que tous les mots qu'il contient.
+// constwords = ['s.e.têrp', 'sap', "setê'n", 'suoV', 'ces', 'redoc', 'av', 'aç', 'eénna', 'etteC']
 
 
 
 
 
+// exerciceÀ l'aide des trois fonctions écrites précédemment, écrivez une fonction qui prend en paramètre le tableau suivant et retourne ledit tableau inversé,
+//  de même que tous les mots qu'il contient.constwords= ['s.e.têrp', 'sap',"setê'n",   'suoV','ces',      'redoc','av',       'aç','eénna',    'etteC']
+
+
+
+// function reverseWord(str) {
+//     let tab = str.split(''); // conversion de la chaine de caractere en tableau
+//     tab.reverse(); // inverser le tableau
+//     let chaine = tab.join(''); // convertir le tableau en chaine de caractere
+//     return chaine;
+//     // return str.split('').reverse().join('');
+// }
+
+// // console.log(reverseWord("Hello World!"));
+
+// function reverseArray(tab) {
+//     return tab.reverse(); // inverser le tableau et le retourner
+// }
+
+// function reverseWords(...words) {
+//     let resultat = []; // tableau vide
+//     for (let i = 0; i < words.length; i++){
+//         // rempli le tableau resultat avec les valeurs inversees de chaque parametre
+//         resultat.push(reverseWord(words[i]));
+//     }
+//     return resultat;
+// }
+// let res = reverseWords("bonjour", "le", "monde");
+// // console.log(res);
+
+// function phrase(tableau) {
+//     let resultat = reverseArray(reverseWords(...tableau));
+//     return resultat;
+// }
+
+// const words = [
+//     's.e.têrp', 'sap',
+//     "setê'n", 'suoV',
+//     'ces', 'redoc',
+//     'av', 'aç',
+//     'eénna', 'etteC'
+// ];
+// console.log(phrase(words));
+
+
+
+// let note = 15;
+// var message = (note > 15) ? "bien" : "mauvais";
+// console.log(message);
+// document.write(message);
+// let note = 5;
+// if (note < 15) {
+//     document.write("mauvais:"+note)
+// } 
+// else {
+//     document.write("bonne:"+note)
+// }
+    
