@@ -362,6 +362,19 @@ et l’initialiser à 03.Appliquer la formule puis affecter son résultat à la 
 // exemple: maxMin(2, 5, true) => 5
 // maxMin(2, 5, false) => 2
 
+// function maxMin(a,b,c){
+//     if (((c==true)&&(a>b))||((c==false)&&(a<b)))  {
+        
+//         return a;
+//     }
+//     else (((c==true)&&(a<b))||((c==false)&&(a>b))){
+        
+//         return b;
+//     }
+//  }
+
+// let resultat=maxMin(3, 5, true);
+// document.write(resultat);
 // function maxiMin(a, b, c) {
 //     if ((c==true) &&(a<b)) {
 //         return b;
@@ -379,7 +392,11 @@ et l’initialiser à 03.Appliquer la formule puis affecter son résultat à la 
 // }
 // let resultat = maxiMin(1, 3, true)
 // console.log(resultat);
+
+
 // 29.06.23 exercice
+
+// analysez et interpreter les codes suivants
 
 // let somme = 0; // la variable somme vaut 0 au depart
 
@@ -425,7 +442,7 @@ et l’initialiser à 03.Appliquer la formule puis affecter son résultat à la 
 
 // 29.06.2023 ecercice
 
-// ecrire unr fonction sommeTab qui prend en paramettre un tableau comprosé de nombres
+// ecrire unr fonction sommeTab qui prend en paramettre un tableau composé de nombres
 // la fonction doit retourner la somme des éléments du tableau
 // exemple:
 
@@ -447,6 +464,8 @@ et l’initialiser à 03.Appliquer la formule puis affecter son résultat à la 
 // let tableautte=[1,3,5] // dans l'enoncer
 // let resultat = someTab(tableautte);
 // document.write(resultat);
+
+
 
 // function maxTab(tableau) {
 //     let max = tableau[0]; // on considere le premier element est le plus grand; premiere valeur du tableau
@@ -483,16 +502,12 @@ et l’initialiser à 03.Appliquer la formule puis affecter son résultat à la 
 //     }
 //     return max; // retourner max
 // }
-
- 
-
 // let tab1 = [5, 8, 3, 0];
 // let resultat3 = maxTab(tab1);
 // console.log(resultat3); // affiche => 8
 
+ 
 
-
-// 29.06.2023
 // ecrire une fonction minTab qui prend en paramètre un tableau composé de
 
 // nombres
