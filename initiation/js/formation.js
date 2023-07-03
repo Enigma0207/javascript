@@ -586,6 +586,44 @@ et l’initialiser à 03.Appliquer la formule puis affecter son résultat à la 
 // const array4 = ['never gonna', 'give you', 'up'];
 // const array5 = ['never gonna', 'let you', 'down'];
 
+// exercice 
+// Ecrivez une fonction "verifSortAsc" qui prend en paramètre un tableau
+//  et vérifie qu'il est bien trié dans l'ordre ascendant.
+//  La fonction devra retourner "true" si c'est le cas, "false" sinon.
+//  Exemples :verifSortAsc(array) => doit retourner "false"
+//  verifSortAsc(array2) => doit retourner "true"
+
+function verifSortAsc(tableau) {
+ let bienTrier=true;
+ let tableau2;
+ for (i=0;i<tableau.length;i++){
+    tableau2.push(tableau[i]);
+    tableau2.sort();
+
+ }
+ for(i=0;i<tableau2.length;i++){
+    if(tableau2([i])== tableau([i])){
+        bienTrier=true;
+    }
+    else{
+        bienTrier==false;
+    }
+ }
+
+    return bienTrier;
+    
+}
+const array = [1, 12, 3, 67, 1, 23, 0, 87];
+
+let tabverif=verifSortAsc(array); 
+
+
+
+
+
+
+
+
 
 // function verifSortAsc(tableau) {
 //     let estTrier = true; // par defaut on considere que le tableau est trie
@@ -593,7 +631,7 @@ et l’initialiser à 03.Appliquer la formule puis affecter son résultat à la 
 //     for (let i = 0; i < tableau.length; i++){​​​​​​​ //
 //         // remplir le tableau tab par les valeur du tableau tableau
 //         tab.push(tableau[i]);
-//     }
+//     }     
 //     tab.sort(); // trier tab
 
 
@@ -606,7 +644,7 @@ et l’initialiser à 03.Appliquer la formule puis affecter son résultat à la 
 //         }
 //     }
 //     return estTrier;
-// }
+// } 
 
 
 // console.log(verifSortAsc(array5)); // =>
@@ -615,6 +653,17 @@ et l’initialiser à 03.Appliquer la formule puis affecter son résultat à la 
 // 29.06.2023
 // Ecrivez une fonction "reverseArray" qui prend en paramètre un tableau et qui retourne ledit tableau inversé.
 //     Exemple : reverseArray(["Hello", "World!"]) => doit retourner["World!", "Hello"]
+
+// function reverseWord(str) {
+//     let tab = str.split(''); // conversion de la chaine de caractere en tableau
+//     tab.reverse(); // inverser le tableau
+//     let chaine = tab.join(''); // convertir le tableau en chaine de caractere
+//     return chaine;
+//     // return str.split('').reverse().join('');
+// }
+
+
+// console.log(reverseWord("Hello World!"));   
 
 // function reversWord(chainCaracter) {
 //     let tab = chainCaracter.split('');

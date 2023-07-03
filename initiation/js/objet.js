@@ -37,9 +37,30 @@
 // qui calcule et retourne la surface du cercle et afficherInfo() qui affiche les informations du cercle dans la console.
 
 
-//   Votre tâche consiste à créer la classe Cercle, instancier un objet Cercle et appeler les méthodes calculerSurface() et afficherInfo() pour l'objet instancié.
+//   Votre tâche consiste à créer la classe Cercle, instancier un objet Cercle et appeler les méthodes calculerSurface()
+//  et afficherInfo() pour l'objet instancié.
 
 //   formule pour claculer la surface d'un cercle : PI multiplié par le rayon au caré PI * (rayon * rayon)
+
+// class cercle{
+//   constructor(r){
+//     this.rayon=r;
+//   }
+//   calculSurface(){
+//    let surface=Math.PI*(Math.sqrt(this.rayon));
+//     return surface;
+    
+//   }
+//   afficherInfo(){
+//  console.log("ce cercle à un rayon de:"+this.rayon+this.calculSurface  ());
+//   }
+  
+ 
+// }
+// let s= new cercle(2);
+// s.afficherInfo();
+
+
 
 // / creer la classe Cercle
 // class Cercle{
@@ -64,13 +85,10 @@
 //         console.log("le cercle a un rayon de " + this.rayon + " est une surface de " + this.calculerSurface());
 //         // this.calculerSurface() retourne la valeur surface
 
- 
-
 //         // console.log("le cercle a un rayon de " + this.rayon + " est une surface de " + Math.ceil(this.calculerSurface()));
 //     }
 // }
 
- 
 
 // let c = new Cercle(2); // instancier un objet cercle = Creer un objet Cercle
 // c.afficherInfo();
@@ -136,7 +154,7 @@
 //     afficherSolde() {
 
 //         // ou
-//         console.log("le solde de mon compte" + this.titulaire + "dans le console est " + this.solde);
+//         // console.log("le solde de mon compte" + this.titulaire + "dans le console est " + this.solde);
 //         console.log(this.solde);
 //     }
     
@@ -144,7 +162,7 @@
 // }
 // let compteBancaire = new Comptbancaire("alin", 5);
 // compteBancaire.deposer(10);
-// compteBancaire.retirer(7);
+// // compteBancaire.retirer(7);
 // compteBancaire.afficherSolde();
 
 
@@ -159,21 +177,21 @@
 
 // const additionFleche = (a, b) => a + b;
 // console.log(additionFleche);
-[13:56] iboudiokel (Invité)
+// [13:56] iboudiokel (Invité)
     
 // ici on utilise une fonction traditionnelle
-function rappel() {​​​​​​​
-    console.log("Ceci est une fonction de rappel")
-}​​​​​​​
+// function rappel() {​​​​​​​
+//     console.log("Ceci est une fonction de rappel")
+// }​​​​​​​
 
 
-setTimeout(rappel(), 2000);
+// setTimeout(rappel(), 2000);
 
 
-// ici on utilise une fonction anonyme
-setTimeout(function() {​​​​​​​
-    console.log("Ceci est une fonction de rappel")
-}​​​​​​​, 2000)
+// // ici on utilise une fonction anonyme
+// setTimeout(function() {​​​​​​​
+//     console.log("Ceci est une fonction de rappel")
+// }​​​​​​​, 2000)
 
 
 
