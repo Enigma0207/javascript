@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <style>
+        #todolist{
+            width: 50%;
+            height: 200px;
+           
+            border: solid black 2px;
+        }
+    </style> -->
+    <style>
+        .display{
+            width: 20px;
+            height: 5px;
+            display: flex;
+            flex-direction: column;
+        }
+        #number1{
+            width: 40px;
+            height: 20px;
+            margin-right: 50px;
+           
+        }
+        #number2{
+            width: 40px;
+            height: 20px;
+            margin-right: 30px;
+        }
+    </style>
+</head>
+<body>
+ <!-- calculatrice -->
+    <form>
+        <input type="number" id="number1">
+        <div class="display">
+            <button id="a" value="+">+</button>
+            <button id="b" value="-">-</button>
+            <button id="c" value="*">*</button>
+             <button id="d" value="/">/</button>
+        </div>
+        <input type="number" id="number2">
+        <button id="button2" value="=">=</button>
+        <input type="text"disabled>
+
+
+    </form>
+    <!-- <form>
+        <input type="text" id="todo">
+        <button id="add_todo">add Todo</button>
+    </form> -->
+
+    <!-- <h1>Liste des Todos</h1>
+    <div id="todolist"> -->
+        <!-- injecter les todo ici -->
+        <!-- <p>todo 1</p>
+        <p>todo 2</p> -->
+    <!-- </div> -->
+    <script src="./js/todo.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            margin: auto;
+            width: 50%;
+
+        }
+        .button{
+          
+            height: 30px;
+            width: 100px;
+             border-radius:7px;
+             position: relative;
+             left: 300px;
+          
+        }
+        .input1{
+            
+            width: 400px;
+            height: 30px;
+            border-radius:7px;
+            margin-left: 50px;
+            
+
+        }
+        #todolist{
+            margin-top: 20px;
+            width: 80%;
+            height: 300px;
+            border: solid black 1px;
+            
+            
+        }
+        h2{
+            margin-left: 200px;
+            font-weight: bolder;
+           
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form class="formulaire">
+          
+          <input class="input1" type="text" name="base" id="todo" placeholder="entrer todo"><br><br>
+          <input id="add_todo" class="button" type="submit" value="valider"><br>
+         
+        </form>
+        <h2>Liste des Todos</h2>
+        <div id="todolist">
+
+        </div>
+        <script src="./initiation/js/formulaire.js"></script>
+    </div>
+</body>
+</html>
