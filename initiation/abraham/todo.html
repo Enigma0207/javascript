@@ -3,20 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <style>
+    <style>
         #todolist{
             width: 50%;
             height: 200px;
            
             border: solid black 2px;
         }
-    </style> -->
-    <style>
+    </style>
+     <!-- <style>
         .display{
             width: 20px;
             height: 5px;
             display: flex;
             flex-direction: column;
+            position: absolute;
+            left: 60px;
+            top: 15px;
         }
         #number1{
             width: 40px;
@@ -28,26 +31,34 @@
             width: 40px;
             height: 20px;
             margin-right: 30px;
+            margin-right: 1px;
         }
-    </style>
+        .form{
+            position: relative;
+            padding-top: 30px;
+        }
+        #button2{
+            margin-left: 2px;
+        }
+    </style> -->
 </head>
 <body>
- <!-- calculatrice -->
-    <form>
-        <input type="number" id="number1">
+ <!-- calulatrice -->
+<!--     
+        <input type="number" id="number1" placeholder="num1">
         <div class="display">
-            <button id="a" value="+">+</button>
-            <button id="b" value="-">-</button>
-            <button id="c" value="*">*</button>
-             <button id="d" value="/">/</button>
+            <button id="plus" value="+">+</button>
+            <button id="moins" value="-">-</button>
+            <button id="multi" value="*">*</button>
+            <button id="divi" value="/">/</button>
         </div>
-        <input type="number" id="number2">
-        <button id="button2" value="=">=</button>
-        <input type="text"disabled>
+        <input type="number" id="number2" placeholder="num2">
+        <button id="egal" value="=">=</button>
+        <input id="resultat" type="text"disabled> -->
+ -->
 
-
-    </form>
-    <!-- <form>
+    
+    <form>
         <input type="text" id="todo">
         <button id="add_todo">add Todo</button>
     </form> -->
@@ -57,7 +68,7 @@
         <!-- injecter les todo ici -->
         <!-- <p>todo 1</p>
         <p>todo 2</p> -->
-    <!-- </div> -->
+    <!-- </div>
     <script src="./js/todo.js"></script>
 </body>
 </html>
