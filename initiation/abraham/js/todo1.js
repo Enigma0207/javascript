@@ -1,4 +1,4 @@
-// pour recuperer le bouton
+  // pour recuperer le bouton
 let btn = document.getElementById("add_todo"); 
 // pour recuperer le input
 let todo = document.getElementById('todo'); 
@@ -13,7 +13,7 @@ btn.addEventListener('click', (e) => {
     // creer un paragraphe
     let p = document.createElement("p");
     // ajouter le contenu du input dans le paragraphe
-    p.textContent = val;
+    p.textContent = val; 
     // ajouter le paragraphe dans la div
     todoList.appendChild(p);
     // ecouter le 
