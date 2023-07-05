@@ -1,24 +1,39 @@
-// // appeler notre id, on remplace addEventListener par on
-// $("#dropdown").on('change', () => {// on cree la fonction avk mais avk change 
-//     if ($("#dropdown").val() == "1") { //si la valeur de id =1
-//         $("#message").text("texte1");//mettre le contenu de p
-
+// version debutant
+// $('#dropdown').change(function() {
+//     var selectedOption = $(this).val();
+//     var message = '';
+  
+//     switch (selectedOption) {
+//         case '1':
+//             message = 'Vous avez sélectionné l\'option 1.';
+//             break;
+//         case '2':
+//             message = 'Vous avez sélectionné l\'option 2.';
+//             break;
+//         case '3':
+//             message = 'Vous avez sélectionné l\'option 3.';
+//             break;
 //     }
-//     else if ($("#dropdown").val() == "2") {
-// $("#message").text("texte2"); // on selectionne notre paragraphe
-
-//     }
-//    else if ($("#dropdown").val() == "3") {
-//         $("#message").text("texte3");
-
-//     }
-//  })
-// $("#dropdown").on('change', () => {
-
-//     $("#message").text("vous avez choisi l'option:" + $("#dropdown").val())
-
+//     $('#message').text(message);
 // });
 
-// document.getElementById("dropdown").addEventListener("change", () => {
-//     document.getElementById("message").textContent = "vous avez choisi loption" + document.getElementById("dropdown").ariaValueMax;
-// })
+// version intermediaire
+// $("#dropdown").on("change", () => {
+//     $("#message").text("Vous avez choisi l'option " + $("#dropdown").val());
+// });
+
+//
+// $("#dropdown").on("change", () => {
+//     if ($("#dropdown").val() == 1) {
+//         $("#message").text("A");
+//     } else if ($("#dropdown").val() == 2) {
+//         $("#message").text("B");
+//     } else {
+//         $("#message").text("C");
+//     }
+// });
+
+// version avec javascript
+document.getElementById("dropdown").addEventListener('change', () => {
+    document.getElementById("message").textContent = "Vous avez choisi l'option " + document.getElementById("dropdown").value;
+})
