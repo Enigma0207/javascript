@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <style>
+        .container {
+            width: 50%;
+            margin: auto;
+            position: relative;
+
+        }
+
+        input {
+            width: 600px;
+            height: 20px;
+        }
+
+        .display2 {
+            display: flex;
+            margin: 20px 0;
+        }
+
+        #ht,
+        #ttc {
+            width: 270px;
+        }
+
+        #ttc {
+            margin-left: 50px;
+        }
+
+        .choix {
+            margin: 20px 0;
+            border-radius: 7px;
+
+        }
+
+        select {
+            width: 280px;
+            height: 30px;
+        }
+
+        #Choisir {
+            border-radius: 7px;
+        }
+
+        #desert {
+            margin-left: 45px;
+            border-radius: 7px;
+        }
+
+        .flex3 {
+            display: flex;
+            margin-top: 20px 0;
+        }
+
+        #checkbox {
+            width: 30px;
+        }
+
+        #valider {
+            margin: 20px;
+            position: absolute;
+            right: 40px;
+            padding: 10px;
+            border-radius: 5px;
+
+
+        }
+
+        h1 {
+            margin-left: 15%;
+            margin-right: 10%;
+            text-transform: uppercase;
+        }
+
+        #email,
+        #phone {
+            margin-top: 20px;
+            border-radius: 7px;
+        }
+
+        #nom {
+            border-radius: 7px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Formulaire de reservation</h1>
+        <form id="form">
+            <div class="input">
+                <input id="nom" type="text" placeholder="nom"> <br>
+                <input id="email" type="text" placeholder="email"> <br>
+                <input id="phone" type="text" placeholder="phone">
+            </div>
+            <div class="choix">
+                <select name="" id="Choisir">
+                    <option value="">Choisir un plat</option>
+                    <option value="thiebou dieune" class="plat">thiebou dieune</option>
+                    <option value="salade de quinoa" class="plat">salade de quinoa</option>
+                    <option value="sushi burger" class="plat">sushi burger</option>
+                    <option value="filets de poulet panes" class="plat">filets de poulet panes</option>
+                </select>
+                <select name="" id="des">
+                    <option value="">Choisir un desert</option>
+                    <option value="churros maison">churros maison</option>
+                    <option value="biscuits au pepites">biscuits au pepites</option>
+                    <option value="buche de noel">buche de noel</option>
+                    <option value="gateau au fromage">gateau au fromage</option>
+                </select>
+            </div>
+            <div class="display2">
+                <input id="ht" placeholder="Total HT">
+                <input id="ttc" placeholder="Total TTC">
+            </div>
+            <div class="flex3">
+                <input id="checkbox" type="checkbox">
+                <label for="">J'acceptr les conditions générales</label>
+            </div>
+            <button id="valider"> valider ma commande</button>
+
+        </form>
+    </div>
+    <script src="./js/manger.js"></script>
+</body>
+
+</html>

@@ -6,9 +6,9 @@ let solution = $("#solution");
 // var solution = document.getElementById("solution");
 let proposer = $("#proposer");
 // var proposer = document.getElementById("proposer");
-//  B JS
 
-// creer une variable pour chaque input
+
+// recuperer les inputs
 
 let proposition = $("#proposition");
 // var proposition = document.getElementById("proposition");
@@ -54,23 +54,29 @@ let nombrealeatoire = aleatoir();//ici on appelle notre fonction
 //     nouveu_jeu = nombrealeatoire;//
 // })
 console.log(nombrealeatoire);
+
+// click proposer
 proposer.on("click", (e) => {
     e.preventDefault();
     if (essaie.val() == 7) {
         message.val("Perdu ")
-        
+
     } else {
         if (proposition.val() > nombrealeatoire) {
-        message.val("supérieur");
-        $("#essaie").val(+$("#essaie").val()+1)
-    }
-    else if (proposition.val() < nombrealeatoire) {
+            message.val("supérieur");
+            $("#essaie").val(+$("#essaie").val() + 1)
+        }
+        else if (proposition.val() < nombrealeatoire) {
             message.val("inférieur");
             $("#essaie").val(+$("#essaie").val() + 1)
+        }
+        else if (proposition.val() == nombrealeatoire) {
+            message.val("vous avez gagné");
+        }
+        // historique
+
     }
-    else if (proposition.val() == nombrealeatoire) {
-        message.val("vous avez gagné");
-    }
-}
-    
+
 })
+//  autre méthode d'abraham
+
